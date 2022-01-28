@@ -3,8 +3,8 @@ class Background{
         this.ctx = ctx;
         this.backgroundFront = {
             img: new Image(),
-            height: this.ctx.canvas.height,
-            widht: 79,
+            width: this.ctx.canvas.width, 
+            height: 79,
             x: 0,
             y: ctx.canvas.height - 79,
             vx: -3,
@@ -15,6 +15,8 @@ class Background{
 
         this.backgroundFar = {
             img: new Image(),
+            width: this.ctx.canvas.width, 
+            height: this.ctx.canvas.height,
             x: 0,
             y: -79,
             vx: -1,
